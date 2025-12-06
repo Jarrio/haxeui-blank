@@ -86,7 +86,8 @@ There are so many backends built that it is extremely likely that there will be 
 - Run `haxelib newrepo` in a terminal, this will create `.haxelib` directory. 
 	*If you haven't used this before, it just installs haxelibs to this folder rather than globally. I do it this way as it keeps*
 	*everything close by and easy to work on*
-- Next ```
+- Next 
+```
 haxelib git haxeui-core https://github.com/haxeui/haxeui-core
 haxelib git haxeui-blank https://github.com/haxeui/haxeui-blank
 ```
@@ -167,7 +168,8 @@ There's going to be more to do in this file, but this is just the starting point
 This is your base components type. This can be a `Visual`, `FlxSprite` an `Object`. Whatever, you call it can be mapped in two ways
 1) `typedef ComponentSurface = Visual;`
 - What this does is it maps the underlying type of all `ComponentSurface`'s to your underlying type, this can work if your base type does not have any name collisions. If there are name collisions, you move to the next step:
-2) ```hx
+2) 
+```hx
 class ComponentSurface {
 	public var visual:RoundedRect;
 
